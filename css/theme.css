@@ -1351,7 +1351,7 @@ a:hover{
 .team-member figure:hover figcaption {
   visibility: visible;
   color: #fff;
-  background: #0063a3;
+  background: rgba(0, 0, 0, 0.4);
   /* Primary color, can be changed via colors.css */
   
   height: 100%;
