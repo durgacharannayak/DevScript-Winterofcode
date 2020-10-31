@@ -2628,11 +2628,13 @@ blockquote {
 .heading-timeline{
   padding-top: 35px;
   color: #62eaff;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .heading-timeline-rt{
   padding-top: 10px;
   color: #62eaff;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .timeline-content{
