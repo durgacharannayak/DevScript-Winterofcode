@@ -1835,6 +1835,7 @@ a:hover {
   padding: 0 30px;
   outline: none;
   text-decoration: none;
+  color: #000;
 }
 
 .faq .faq-list .icon-help {
@@ -2298,160 +2299,229 @@ form .field-error {
 /*!
 // 17. Footers
 // --------------------------------------------------*/
-.footer .top-border {
-  height: 2px;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.3);
-  margin-bottom: 32px;
-}
-.footer .menu {
-  overflow: visible;
-}
-.footer .menu li {
-  top: 0px;
-}
-.footer .menu li a {
-  padding-bottom: 0px;
-}
-.footer .menu li .btn {
-  min-width: 0px;
-  padding: 10px 18px;
-  font-size: 14px;
-}
-.footer .menu li a {
-  display: inline-block;
-  position: relative;
-  border: none;
-}
-.footer .menu li a:hover {
-  border: none;
-}
-.footer .back-to-top {
-  padding-right: 42px;
-}
-.footer .menu li a i {
-  font-size: 36px;
-  position: absolute;
-  right: 0px;
-  top: -12px;
-}
-@media all and (max-width: 767px) {
-  .footer .text-right {
-    text-align: left !important;
-  }
-  .footer .menu {
-    margin-top: 24px;
-  }
-  .footer .menu li {
-    float: none;
-    margin-bottom: 12px;
-  }
-}
-footer.classic {
-  padding: 72px 0px 36px 0px;
-  background: #f5f5f5;
-}
-footer.classic .menu li {
-  float: none;
-  margin-bottom: 12px;
-}
-footer.classic .menu li a {
-  color: #333333;
-  padding-bottom: 0px;
-  font-weight: 600;
-}
-footer.classic span.lead {
-  display: inline-block;
-  margin-bottom: 12px;
-}
-footer.short {
-  background: #333333;
-  color: #fff;
-  padding: 72px 0px;
-}
-footer.short .top-border {
-  height: 1px !important;
-}
-@media all and (max-width: 767px) {
-  footer.classic div {
-    margin-bottom: 18px;
-  }
-}
-.contact-methods li {
-  margin-bottom: 12px;
-}
-.contact-methods li:last-child {
-  margin-bottom: 0px;
-}
-.contact-methods i {
-  font-size: 36px;
-  color: #333333;
-}
-.contact-methods span {
-  display: inline-block;
-  position: relative;
-  bottom: 10px;
-  left: 8px;
-  font-size: 16px;
-}
-footer.classic .social-profiles {
-  margin-top: 36px;
-}
-.social-profiles {
-  display: inline-block;
-  overflow: hidden;
-}
-.social-profiles li {
-  float: left;
-  margin-right: 36px;
-}
-.social-profiles li:last-child {
-  margin-right: 0px;
-}
-.social-profiles li a {
-  color: #333333;
-  font-size: 20px;
+.footer-distributed {
+    background: #111;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    font: bold 16px sans-serif;
+    text-align: left;
+    padding: 50px 60px 20px;
+    overflow: hidden;
 }
 
-/* Tooltip for venue partner description */
-.tooltip__venue {
-  position: relative;
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    float: left;
 }
 
-.tooltip__venue .tooltiptext {
-  cursor: default;
-  font-size: 15px;
-  visibility: hidden;
-  min-width: 265%;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 13px 8px;
-  position: absolute;
-  z-index: 1;
-  top: 87px;
-  right: -83%;
-}
-@media all and (max-width: 767px) {
-  .tooltip__venue .tooltiptext {
-    display: none;
-  }
+
+/* The company logo */
+
+.footer-distributed .footer-left img {
+    height: 300px;
 }
 
-.tooltip__venue .tooltiptext::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent black transparent;
+.footer-distributed h3 span {
+    color: #5383d3;
 }
 
-.tooltip__venue:hover .tooltiptext {
-  visibility: visible;
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name,
+.footer-distributed .footer-author-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons,
+.footer-distributed .footer-mail {
+    margin: 20px 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    float: right;
+}
+
+.footer-distributed .footer-right p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 42px 0 0;
+    color: #ffffff;
+}
+
+
+/* The contact form */
+
+.footer-distributed form {
+    display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea {
+    display: block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    font: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    color: #d1d2d2;
+    width: 400px;
+    padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+    color: #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+    color: #5c666b;
+    opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder {
+    color: #5c666b;
+}
+
+.footer-distributed form input {
+    height: 55px;
+    margin-bottom: 15px;
+}
+
+.footer-distributed form textarea {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-distributed form button {
+    border-radius: 3px;
+    background-color: #33383b;
+    color: #ffffff;
+    border: 0;
+    padding: 15px 50px;
+    font-weight: bold;
+    float: right;
+}
+
+.footer-distributed .input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.footer-distributed .input-container .icon {
+    padding: 10px;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.footer-distributed .input-container .input-field {
+    width: 200%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-container button {
+    margin: auto;
+}
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+    .footer-distributed .footer-company-name,
+    .footer-distributed .footer-author-name {
+        font-size: 12px;
+    }
+    .footer-distributed form input,
+    .footer-distributed form textarea {
+        width: 250px;
+    }
+    .footer-distributed form button {
+        padding: 10px 35px;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer-distributed {
+        padding: 30px;
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+        float: none;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .footer-distributed .footer-left {
+        margin-bottom: 40px;
+    }
+    .footer-distributed form {
+        margin-top: 30px;
+    }
+    .footer-distributed form {
+        display: block;
+    }
+    .footer-distributed form button {
+        float: none;
+    }
+}
+
+.footer-down {
+    background: #111;
+    text-align: center;
+    height: 30px;
+}
+
+.footer-down p {
+    color: #8f9296;
+    margin: 0;
 }
 
 /****************************************Updated timeline css******************************************/
@@ -2740,4 +2810,62 @@ blockquote {
 .timeline-content{
   background-color: #2f2f2f;
 
+}
+
+/* Sponsors */
+#sponsors {
+  background-color: #F9FAFC
+}
+
+.sponsor-heading {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  margin: 50px 0px 30px 0;
+  text-transform: uppercase
+}
+
+.sponsors-logo {
+  background-color: #fff;
+  margin: 7px;
+  padding: 20px 10px;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05), 0 1px 5px 0 rgba(0, 0, 0, 0.05);
+  cursor: grab
+}
+
+.sponsors-logo:hover {
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.1), 0 2px 7px 0 rgba(0, 0, 0, 0.1)
+}
+
+.title-sponsor img {
+  width: 50%
+}
+
+.gold-sponsor img {
+  width: 70%
+}
+
+.silver-sponsor img {
+  width: 70%
+}
+
+.general-sponsor img {
+  width: 60%
+}
+
+.past-sponsor img {
+  width: 80%
+}
+
+#speakers-info p {
+  font-size: 20px
 }
