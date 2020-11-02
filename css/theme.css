@@ -2557,18 +2557,31 @@ header p {
 
 .timeline {
   position: relative;
-  background: linear-gradient(45deg, #000000, #343335);
+  /* background: linear-gradient(45deg, #9dd8e7, #d392d0); */
   background-size: 200% 200%;
-  animation: animateGlow 10s ease infinite;
+  animation: animateGlow 6s ease infinite;
 }
 .timeline::before {
   content: "";
-  background: #25dee4d7;
   width: 5px;
   height: 95%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  background: linear-gradient(180deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient-line 15s ease infinite;
+}
+
+@keyframes gradient-line {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .timeline-item {
@@ -2592,7 +2605,7 @@ header p {
   top: 30px;
   left: -15px;
   border-width: 10px 15px 10px 0;
-  border-color: transparent #f5f5f5 transparent transparent;
+  border-color: transparent #2f2f2f transparent transparent;
 }
 .timeline-item::after {
   content: "";
@@ -2617,24 +2630,27 @@ header p {
   top: 30px;
   right: -15px;
   border-width: 10px 0 10px 15px;
-  border-color: transparent transparent transparent #f5f5f5;
+  border-color: transparent transparent transparent #2f2f2f;
 }
 
-.timeline-img {
+.timeline-img-1 {
   width: 30px;
   height: 30px;
-  background: #27e0e0fb;
+  border-color: black;
   border-radius: 50%;
   position: absolute;
   left: 50%;
   margin-top: 25px;
   margin-left: -15px;
+  background: #ed7352;/*linear-gradient(180deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  /* animation: gradient-line 15s ease infinite; */
+
 }
 
 .timeline-img-2 {
   width: 30px;
   height: 30px;
-  background: #21d1dd;
+  background: #e94d68;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -2645,7 +2661,7 @@ header p {
 .timeline-img-3 {
   width: 30px;
   height: 30px;
-  background: #21d1dd;
+  background: #e84f7d;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -2656,7 +2672,7 @@ header p {
 .timeline-img-4 {
   width: 30px;
   height: 30px;
-  background: #21d1dd;
+  background: #994a98;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -2667,7 +2683,7 @@ header p {
 .timeline-img-5 {
   width: 30px;
   height: 30px;
-  background: #21d1dd;
+  background: #1e96cd;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -2678,7 +2694,7 @@ header p {
 .timeline-img-6 {
   width: 30px;
   height: 30px;
-  background: #21d1dd;
+  background: #3ab4c7;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -2689,7 +2705,7 @@ header p {
 .timeline-img-7 {
   width: 30px;
   height: 30px;
-  background: #21d1dd;
+  background: #4dc6b7;
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -2777,7 +2793,7 @@ blockquote {
     top: 30px;
     left: -15px;
     border-width: 10px 15px 10px 0;
-    border-color: transparent #f5f5f5 transparent transparent;
+    border-color: transparent #2f2f2f transparent transparent;
   }
 }
 
@@ -2887,9 +2903,17 @@ blockquote {
   letter-spacing: 4px;
 }
 
+.gradient-head-timeline {
+  color: #169797;
+  padding: 5px;
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 4px;
+}
+
 body {
 	position: relative;
-  background: linear-gradient(270deg, #000000, #343335);
+  background: linear-gradient(-70deg, #ebe5e5, #f8f6fa);
   background-size: 200% 200%;
   animation: animateGlow 10s ease infinite;
 }
